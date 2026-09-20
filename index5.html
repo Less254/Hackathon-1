@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-</head>
 <body>
 <!-- Header Navigation -->
 <header>
@@ -16,9 +15,9 @@
         <ul>
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">portfolio</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#skills">Services</a></li>
             <li><a href="#skills">skills</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#about">Blog</a></li>
             <li><a href="#contact-info">Contact</a></li>
         </ul>
     </nav>
@@ -32,15 +31,12 @@
         <p class="hero-services">
         <span></span> FRONTEND DEVELOPMENT<span>|</span> UX DESIGN <span>|</span> WEB DEVELOPMENT <span>|</span> DATABASE <span>|</span> SOFTWARE TESTING <span>|</span> SOFTWARE DEVELOPMENT
         </p>
-        <a href="#" class="cta-button">Let's Talk New</a>
+        <a href="#contact-info" class="cta-button">Let's Talk</a>
     </div>
 </section>
 <section class="about-section">
     <!-- Profile Image -->
-    <div class="profile-image-container">
-        <img src="images/20210208_145933.jpg" alt="Martin Luther" class="profile-image">
-    </div>
-    
+
     <!-- About Content -->
     <div class="about-content" id="about">
         <h2 class="section-title">About <span class="highlight">Me</span></h2>
@@ -85,7 +81,7 @@
         <div class="skill-item">
             <div class="skill-name">BOOTSTRAPS</div>
             <div class="skill-bar-container">
-                <div class="skill-bar wordpress"></div>
+                <div class="skill-bar bootstrap"></div>
             </div>
             <div class="skill-percentage">60%</div>
         </div>
@@ -93,7 +89,7 @@
         <div class="skill-item">
             <div class="skill-name">REACT</div>
             <div class="skill-bar-container">
-                <div class="skill-bar drupal"></div>
+                <div class="skill-bar react"></div>
             </div>
             <div class="skill-percentage">50%</div>
         </div>
@@ -101,7 +97,7 @@
         <div class="skill-item">
             <div class="skill-name">GIT</div>
             <div class="skill-bar-container">
-                <div class="skill-bar wix"></div>
+                <div class="skill-bar git"></div>
             </div>
             <div class="skill-percentage">90%</div>
         </div>
@@ -109,7 +105,7 @@
         <div class="skill-item">
             <div class="skill-name">JQUERY</div>
             <div class="skill-bar-container">
-                <div class="skill-bar photoshop"></div>
+                <div class="skill-bar jquery"></div>
             </div>
             <div class="skill-percentage">100%</div>
         </div>
@@ -117,7 +113,7 @@
         <div class="skill-item">
             <div class="skill-name">PYTHON</div>
             <div class="skill-bar-container">
-                <div class="skill-bar illustrator"></div>
+                <div class="skill-bar python"></div>
             </div>
             <div class="skill-percentage">80%</div>
         </div>
@@ -141,44 +137,30 @@
          <div class="skill-item">
             <div class="skill-name">SELENIUM</div>
             <div class="skill-bar-container">
-                <div class="skill-bar html-css"></div>
-            </div>
-             <div class="skill-percentage">100%</div>
-        </div>
-         <div class="skill-item">
-            <div class="skill-name">PLAYWRIGHT</div>
-            <div class="skill-bar-container">
-                <div class="skill-bar html-css"></div>
+                <div class="skill-bar selenium"></div>
             </div>
             <div class="skill-percentage">100%</div>
         </div>
          <div class="skill-item">
             <div class="skill-name">TAILWIND CSS</div>
             <div class="skill-bar-container">
-                <div class="skill-bar html-css"></div>
+                <div class="skill-bar tailwind"></div>
             </div>
             <div class="skill-percentage">100%</div>
         </div>
          <div class="skill-item">
             <div class="skill-name">REST API</div>
             <div class="skill-bar-container">
-                <div class="skill-bar html-css"></div>
+                <div class="skill-bar rest-api"></div>
             </div>
             <div class="skill-percentage">80%</div>
          </div>
          <div class="skill-item">
             <div class="skill-name">FLASK/DJANGO</div>
             <div class="skill-bar-container">
-                <div class="skill-bar html-css"></div>
+                <div class="skill-bar flask-django"></div>
             </div>
             <div class="skill-percentage">80%</div>
-            </div>
-            <div class="skill-item">
-            <div class="skill-name">MySQL</div>
-            <div class="skill-bar-container">
-                <div class="skill-bar html-css"></div>
-            </div>
-            <div class="skill-percentage">100%</div>
             </div>
     </div> 
 </section>
@@ -194,18 +176,21 @@
                 <h3>Drop us a line</h3>
                 <p>We are here to answer any question you may have</p>
                 
-                <form>
+                <form action="mailto:odhiambolester@gmail.com" method="post" enctype="text/plain">
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="text" placeholder="Name" required>
+                            <label class="visually-hidden" for="name">Name</label>
+                            <input id="name" type="text" name="name" placeholder="Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Email" required>
+                            <label class="visually-hidden" for="email">Email</label>
+                            <input id="email" type="email" name="email" placeholder="Email" required>
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <textarea placeholder="Your Comment"></textarea>
+                        <label class="visually-hidden" for="message">Your Comment</label>
+                        <textarea id="message" name="message" placeholder="Your Comment" required></textarea>
                     </div>
                     
                     <button type="submit" class="btn">Get in Touch</button>
